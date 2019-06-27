@@ -15,6 +15,7 @@ def keyboard():
     keyboard.add_button("погода", color= VkKeyboardColor.PRIMARY)
     keyboard.add_line()
     keyboard.add_button("команды", color=VkKeyboardColor.DEFAULT)
+    keyboard.add_button("мем", color=VkKeyboardColor.DEFAULT)
     return keyboard.get_keyboard()
 while True:
     messages = vk.method("messages.getConversations", {"count": 20, "filter": "unanswered"})
